@@ -2,7 +2,7 @@
 
 Dependencies
 1. Python3
-Download latest Pycharm
+Download latest Pycharm https://www.jetbrains.com/pycharm/download
 
 2. Selenium automation framework
 pip3 install selenium
