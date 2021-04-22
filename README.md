@@ -10,6 +10,8 @@ pip3 install selenium
 Chromedriver
 https://chromedriver.chromium.org/downloads
 
+Provide your own instagram login information in the code
+
 Running
 Copy and paste code into Pycharm, the IDE should trigger errors to handle the imports
 
