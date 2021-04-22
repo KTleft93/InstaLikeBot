@@ -4,10 +4,10 @@ Dependencies
 Python3
 Download latest Pycharm
 
-Selenium
+Selenium automation framework
 pip3 install selenium
 
-Chromedriver
+Chromedriver allows automation on google chrome browser
 https://chromedriver.chromium.org/downloads
 
 Provide your own instagram login information in the code
