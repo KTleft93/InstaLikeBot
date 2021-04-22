@@ -5,6 +5,8 @@ import time
 def login(browser):
         browser.get("https://www.instagram.com/?h1=en")
         time.sleep(5)
+        
+        #Your user name and password
         username = browser.find_element_by_css_selector("[name='username']")
         password = browser.find_element_by_css_selector("[name='password']")
         login = browser.find_element_by_css_selector("button")
@@ -18,6 +20,7 @@ def visit_Tag(browser, url):
     browser.get(url)
     time.sleep(5)
 
+    #Put div of images in to an array
     pictures = []
     pictures = browser.find_elements_by_css_selector("div[class='_9AhH0']")
     some_pictures = pictures[9:12]
@@ -28,10 +31,12 @@ def visit_Tag(browser, url):
 
         picture.click()
         time.sleep(sleep_time)
-
+        
+        #click the like button of a picture
         like_button = browser.find_element_by_css_selector("[aria-label='Like']")
         like_button.click()
-
+        
+        #close picture after liking or if it is already been liked
         close = browser.find_element_by_css_selector("[aria-label='Close']")
         close.click()
 
@@ -42,14 +47,13 @@ def main():
     browser = webdriver.Chrome()
     login(browser)
 
+    #Tags the bot will search and like pictures from    
     tags = [
         "fitness",
-        "blackfitness",
         "workouts",
         "likeback",
         "like4like",
         "fitfam",
-        "bootyworkout",
         "homeworkout",
         "likeback",
         "gym"
