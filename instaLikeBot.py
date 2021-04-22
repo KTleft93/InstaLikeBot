@@ -20,9 +20,11 @@ def visit_Tag(browser, url):
     browser.get(url)
     time.sleep(5)
 
-    #Put div of images in to an array
+    #Put div of images in to an list
     pictures = []
     pictures = browser.find_elements_by_css_selector("div[class='_9AhH0']")
+
+    #Do a list slice and get the most recent pictures instead of the most popular
     some_pictures = pictures[9:12]
     sleep_time = 5
     image_count = 0
